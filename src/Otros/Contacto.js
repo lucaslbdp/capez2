@@ -8,6 +8,9 @@ import {
   MDBInput,
 } from "mdbreact";
 import "../../src/App.css";
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
+
 
 const Contacto = () => {
   const [state, setState] = useState({
@@ -18,21 +21,38 @@ const Contacto = () => {
   });
   const handleChangeInput = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
+  };
 
-  };
-  const enviarFormulario = () => {
-  };
   const disabledBoton =
     state.name.length < 3 ||
-    state.email.length < 7 ||
-    state.tema.length < 8 ||
-    state.mensaje.length < 7;
+    state.email.length < 5 ||
+    state.tema.length < 3 ||
+    state.mensaje.length < 5;
+      
+
+    function enviarFormulario(e) {
+      e.preventDefault();
+  
+      emailjs.sendForm('capezGmail', 'template_J1gciyhd', e.target, 'user_ohXjZB0I0Z5ClNvVUWGWd')
+        .then((result) => {
+          setState({name:"", email:"", tema:"", mensaje:""})
+          Swal.fire(
+            '¡Genial!',
+            'Tu consulta fue enviada correctamente',
+            'success'
+          )
+        }, (error) => {
+            alert("Por favor complete los campos");
+        });
+        
+    }; 
+
 
   return (
     <MDBContainer>
       <MDBRow>
         <MDBCol md="6">
-          <form className="mt-5 mb-5" onSubmit={() => enviarFormulario()}>
+          <form className="mt-5 mb-5" onSubmit={enviarFormulario}>
             <p className="h5 text-center mb-4">Hace tu consulta SIN CARGO</p>
             <div className="grey-text">
               <MDBInput
@@ -81,16 +101,16 @@ const Contacto = () => {
                 icon="pencil-alt"
                 name="mensaje"
                 onChange={(e) => handleChangeInput(e)}
-                value={state.value}
+                value={state.mensaje}
                 require
               />
             </div>
             <div className="text-center">
               <MDBBtn
-                className="botonEnviarMail"
+                type="submit"
+                value="send"
                 outline={disabledBoton}
                 color="secondary"
-                onClick={() => enviarFormulario()}
                 disabled={disabledBoton}
               >
                 Enviar
