@@ -11,7 +11,7 @@ import { Container, Row } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer className="text-light py-5 pt-5 unique-color">
+    <footer className="text-dark py-5 pt-5 grey lighten-2">
         <Container>
             <Row>
       <div className="col-sm-12 col-md-4">
@@ -24,7 +24,7 @@ const Footer = () => {
             href="https://www.facebook.com/capezcomunicacion"
           >
             <FontAwesomeIcon
-              className="ml-5"
+              className="ml-3"
               icon={faFacebook}
             ></FontAwesomeIcon>
           </a>
@@ -33,7 +33,7 @@ const Footer = () => {
             href="https://www.instagram.com/capezcomunicacion/"
           >
             <FontAwesomeIcon
-              className="ml-5"
+              className="ml-3"
               icon={faInstagram}
             ></FontAwesomeIcon>
           </a>
@@ -42,7 +42,7 @@ const Footer = () => {
             href="https://api.whatsapp.com/send?phone=+5493815516016"
           >
             <FontAwesomeIcon
-              className="ml-5"
+              className="ml-3"
               icon={faWhatsapp}
             ></FontAwesomeIcon>
           </a>
@@ -53,9 +53,7 @@ const Footer = () => {
       </div></Row></Container>
       <br></br>
       <div
-        className="footer-copyright text-center py-3 unique-color-dark
-"
-      >
+        className="footer-copyright text-center py-3">
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{" "}
           <a href="https://www.capezcomunicaciones.com">

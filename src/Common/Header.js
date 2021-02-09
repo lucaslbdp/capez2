@@ -1,17 +1,12 @@
 import React from 'react';
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import {NavLink} from "react-router-dom";import { MDBNavbar } from 'mdbreact';
-import "../../src/App.css";
+import { MDBNavbar } from 'mdbreact';
 
 
 const Header = () => {
     return (
-        <MDBNavbar color="unique-color" light expand="md" className="fixed-top" scrolling transparent>
-            <Navbar.Brand href="#home">Capez</Navbar.Brand>
-            <Nav className="ml-auto">
-                <NavLink exact={true} to="/" style={{color:"black"}}>Inicio</NavLink>
-            </Nav>
+        <MDBNavbar color="grey lighten-3" className="fixed-top pt-0 pb-0" scrolling transparent>
+            <Navbar.Brand href="/" className="pt-0"><img src={process.env.PUBLIC_URL+ "logoHead.png"}></img></Navbar.Brand>
         </MDBNavbar>
     );
 };
