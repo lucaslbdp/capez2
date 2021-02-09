@@ -21,17 +21,17 @@ const Inicio = () => {
             <article className="container">
                 <div className="row text-align-center">
                     <div className="item col-12 col-md-6 col-lg-3" style={{ fontSize: "2cm", color: "green" }}>
-                        <FontAwesomeIcon icon={faThumbsUp}></FontAwesomeIcon>
+                    <img src={process.env.PUBLIC_URL + "chatbot.png"}></img>
                         <h3>Chatbot personalizado</h3>
                         <p style={{ fontSize: "15px", color: "black" }}>Daremos vida a tus redes sociales, planificaremos una conversación exitosa con tu cliente, dando la mayor información sobre tu negocio.</p>
                     </div>
                     <div className="item col-12 col-md-6 col-lg-3" style={{ fontSize: "2cm", color: "green" }}>
-                        <FontAwesomeIcon icon={faPenNib}></FontAwesomeIcon>
+                        <img src={process.env.PUBLIC_URL + "branding.png"}></img>
                         <h3>Branding y diseño de marca</h3>
                         <p style={{ fontSize: "15px", color: "black" }}>Construiremos o renovaremos tu marca de manera profesional, coherente y adecuado a los últimos estándares.</p>
                     </div>
                     <div className="item col-12 col-md-6 col-lg-3" style={{ fontSize: "2cm", color: "green" }}>
-                        <FontAwesomeIcon icon={faLaptopCode}></FontAwesomeIcon>
+                    <img src={process.env.PUBLIC_URL + "web.png"}></img>
                         <h3>Desarrollo web</h3>
                         <p style={{ fontSize: "15px", color: "black" }}>Desarrollaremos la presencia digital de tu negocio con una página web optimizada para atraer consultas.</p>
                     </div>

@@ -51,7 +51,7 @@ const Footer = () => {
       <div className="col-sm-12 col-md-4 ml-auto text-center">
       <Button variant="success">Contactarse con un asesor</Button>
       </div></Row></Container>
-      <br></br>
+      <hr style={{width:"90%"}}></hr>
       <div
         className="footer-copyright text-center py-3">
         <MDBContainer fluid>

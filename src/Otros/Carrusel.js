@@ -8,21 +8,21 @@ const Nosotros = () => {
                 <Carousel.Item interval={4000}>
                     <img
                         className="d-block w-100"
-                        src={process.env.PUBLIC_URL + "/COMUNICACION1.png"}
+                        src={process.env.PUBLIC_URL + "/slider1.png"}
                         alt="First slide" height="550px"
                     />
                 </Carousel.Item>
                 <Carousel.Item interval={4000}>
                     <img
                         className="d-block w-100"
-                        src={process.env.PUBLIC_URL + "/COMUNICACION2.png"}
+                        src={process.env.PUBLIC_URL + "/slider1.png"}
                         alt="Second slide" height="550px"
                     />
                 </Carousel.Item>
                 <Carousel.Item interval={4000}>
                     <img
                         className="d-block w-100"
-                        src={process.env.PUBLIC_URL + "/COMUNICACION3.png"}
+                        src={process.env.PUBLIC_URL + "/slider1.png"}
                         alt="Third slide" height="550px"
                     />
                 </Carousel.Item>

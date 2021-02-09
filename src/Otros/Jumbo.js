@@ -1,14 +1,14 @@
 import React from 'react';
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
+import "../App.css"
 
 const Jumbo = () => {
     return (
-        <Jumbotron fluid className="mt-5 text-center blue lighten-5">
-            <Container>
-                <h2 style={{textTransform:"initial"}}>Nosotros</h2>
-                <p>Somos una empresa tucumana que llega para brindar la mejor calidad en comunicación a través de un servicio automático y personalizado a la vez, dejando resultados reales y eficaces.</p>
-            </Container>
+        <Jumbotron className="mt-5 text-center aqua-gradient" style={{ width: "100%" }}>
+
+            <h2 style={{ textTransform: "initial"}} espacio>Nosotros</h2>
+            <p>Somos una empresa tucumana que llega para brindar la mejor calidad en comunicación a través de un servicio automático y personalizado a la vez, dejando resultados reales y eficaces.</p>
+
         </Jumbotron>
 
     );
