@@ -52,7 +52,7 @@ const Contacto = () => {
     <MDBContainer>
       <MDBRow>
         <MDBCol md="6">
-          <form className="mt-5 mb-5" onSubmit={enviarFormulario}>
+          <form className="mt-5 pt-5 mb-5" onSubmit={enviarFormulario}>
             <p className="h5 text-center mb-4">Hace tu consulta SIN CARGO</p>
             <div className="grey-text">
               <MDBInput
@@ -118,6 +118,9 @@ const Contacto = () => {
               </MDBBtn>
             </div>
           </form>
+        </MDBCol>
+        <MDBCol>
+          <img src={process.env.PUBLIC_URL + "/imgBody.png"} style={{maxWidth:"510px"}} className="ml-4 pt-5 pb-5"></img>
         </MDBCol>
       </MDBRow>
     </MDBContainer>

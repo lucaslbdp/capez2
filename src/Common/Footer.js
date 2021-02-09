@@ -20,24 +20,24 @@ const Footer = () => {
               target="_blank noreferrer"
               href="https://api.whatsapp.com/send?phone=+5493815516016"
             >
-              <img src={process.env.PUBLIC_URL + "contactar.png"} className="mr-5"></img></a>
+              <img src={process.env.PUBLIC_URL + "contactar.png"} style={{maxWidth:"350px"}} className="mr-5"></img></a>
             <div className="ml-5">
-              <p className="mt-3 ml-5" style={{fontSize:"18px"}}>Seguinos en nuestras redes:</p>
+              <p className="mt-4 ml-4" style={{fontSize:"18px"}}>Seguinos en nuestras redes:</p>
               <a
                 target="_blank noreferrer"
                 href="https://www.facebook.com/capezcomunicacion"
               >
-              <img src={process.env.PUBLIC_URL + "/facebookIcon.png"} className="ml-5"></img></a>
+              <img src={process.env.PUBLIC_URL + "/facebookIcon.png"} style={{maxWidth:"50px"}} className="ml-5"></img></a>
               <a
                 target="_blank noreferrer"
                 href="https://www.instagram.com/capezcomunicacion/"
               >
-              <img src={process.env.PUBLIC_URL + "/instagramIcon.png"} className="ml-2"></img></a>
+              <img src={process.env.PUBLIC_URL + "/instagramIcon.png"} style={{maxWidth:"50px"}} className="ml-2"></img></a>
               <a style={{ color: "black" }}
                 target="_blank noreferrer"
                 href="https://api.whatsapp.com/send?phone=+5493815516016"
               >
-              <img src={process.env.PUBLIC_URL + "/whatsappIcon.png"} className="ml-2"></img></a>
+              <img src={process.env.PUBLIC_URL + "/whatsappIcon.png"} style={{maxWidth:"50px"}} className="ml-2"></img></a>
             </div>
           </div>
         </Row></Container>
