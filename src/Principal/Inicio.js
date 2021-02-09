@@ -11,27 +11,28 @@ const Inicio = () => {
         <Container fluid>
             <div className="text-center">
                 <Carrusel></Carrusel>
-                <h1 className="mt-5 text-success" style={{textTransform:"initial", letterSpacing:"0cm"}}>¿Cómo podemos ayudarte?</h1>
-                <h3 style={{textTransform:"initial"}}><strong>Tenemos los servicios de comunicación que tu empresa necesita</strong></h3>
+                <img src={process.env.PUBLIC_URL + "/ayudarte.png"} className="mt-5"></img>
+                <h1 className="text-dark" style={{ textTransform: "initial", letterSpacing: "0cm" }}><strong>¿Cómo podemos ayudarte?</strong></h1>
+                <h3 style={{ textTransform: "initial" }}>Tenemos los servicios de comunicación que tu empresa necesita</h3>
             </div>
 
             <Jumbo></Jumbo>
-            <article className="container">
-                <div className="row text-align-center">
+            <article className="grey lighten-2">
+                <div className="row text-center">
                     <div className="item col-12 col-md-6 col-lg-3" style={{ fontSize: "2cm", color: "green" }}>
-                    <img src={process.env.PUBLIC_URL + "chatbot.png"}  width="85%"></img>
-                        <h3>Chatbot personalizado</h3>
-                        <p style={{ fontSize: "15px", color: "black" }}>Daremos vida a tus redes sociales, planificaremos una conversación exitosa con tu cliente, dando la mayor información sobre tu negocio.</p>
+                        <img src={process.env.PUBLIC_URL + "chatbot.png"} width="85%"></img>
+                        <h3><strong>Chatbot personalizado</strong></h3>
+                        <p style={{ fontSize: "15px", color: "black" }} className="mt-4">Daremos vida a tus redes sociales, planificaremos una conversación exitosa con tu cliente, dando la mayor información sobre tu negocio.</p>
                     </div>
                     <div className="item col-12 col-md-6 col-lg-3" style={{ fontSize: "2cm", color: "green" }}>
                         <img src={process.env.PUBLIC_URL + "branding.png"} width="85%"></img>
-                        <h3>Branding y diseño de marca</h3>
-                        <p style={{ fontSize: "15px", color: "black" }}>Construiremos o renovaremos tu marca de manera profesional, coherente y adecuado a los últimos estándares.</p>
+                        <h3><strong>Branding y diseño de marca</strong></h3>
+                        <p style={{ fontSize: "15px", color: "black" }} className="mt-4">Construiremos o renovaremos tu marca de manera profesional, coherente y adecuado a los últimos estándares.</p>
                     </div>
                     <div className="item col-12 col-md-6 col-lg-3" style={{ fontSize: "2cm", color: "green" }}>
-                    <img src={process.env.PUBLIC_URL + "web.png"} width="85%"></img>
-                        <h3>Desarrollo web</h3>
-                        <p style={{ fontSize: "15px", color: "black" }}>Desarrollaremos la presencia digital de tu negocio con una página web optimizada para atraer consultas.</p>
+                        <img src={process.env.PUBLIC_URL + "web.png"} width="85%"></img>
+                        <h3><strong>Desarrollo web</strong></h3>
+                        <p style={{ fontSize: "15px", color: "black" }} className="mt-5">Desarrollaremos la presencia digital de tu negocio con una página web optimizada para atraer consultas.</p>
                     </div>
                 </div>
             </article>

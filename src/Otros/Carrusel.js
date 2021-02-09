@@ -1,8 +1,10 @@
 import React from 'react';
-import Carousel from "react-bootstrap/Carousel"
+import Carousel from "react-bootstrap/Carousel";
+import Container from "react-bootstrap/Container";
 
 const Nosotros = () => {
     return (
+        <Container>
         <div className="pt-5 mt-5">
             <Carousel className="pt-5">
                 <Carousel.Item interval={4000}>
@@ -28,6 +30,7 @@ const Nosotros = () => {
                 </Carousel.Item>
             </Carousel>
         </div>
+        </Container>
     );
 };
 
