@@ -4,8 +4,6 @@ import Jumbo from "../Otros/Jumbo";
 import Contacto from "../Otros/Contacto";
 import Container from "react-bootstrap/Container";
 import ".././App.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp, faPenNib, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 
 const Inicio = () => {
@@ -13,7 +11,7 @@ const Inicio = () => {
         <Container fluid>
             <div className="text-center">
                 <Carrusel></Carrusel>
-                <h1 className="mt-5 text-success" style={{textTransform:"initial"}}>¿Cómo podemos ayudarte?</h1>
+                <h1 className="mt-5 text-success" style={{textTransform:"initial", letterSpacing:"0cm"}}>¿Cómo podemos ayudarte?</h1>
                 <h3 style={{textTransform:"initial"}}><strong>Tenemos los servicios de comunicación que tu empresa necesita</strong></h3>
             </div>
 

@@ -60,7 +60,7 @@ const Footer = () => {
       <div
         className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright:{" "}
+        <strong> &copy; {new Date().getFullYear()}Copyright: </strong> {" "}
           <a href="https://www.capezcomunicaciones.com">
             {" "}
             CapezComunicaciones.com{" "}
