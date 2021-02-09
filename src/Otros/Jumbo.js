@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 const Jumbo = () => {
     return (
-        <Jumbotron fluid className="mt-5 text-center">
+        <Jumbotron fluid className="mt-5 text-center blue lighten-5">
             <Container>
                 <h2 style={{textTransform:"initial"}}>Nosotros</h2>
                 <p>Somos una empresa tucumana que llega para brindar la mejor calidad en comunicación a través de un servicio automático y personalizado a la vez, dejando resultados reales y eficaces.</p>
