@@ -5,7 +5,7 @@ import { MDBNavbar } from 'mdbreact';
 
 const Header = () => {
     return (
-        <MDBNavbar color="grey lighten-3" className="fixed-top pt-0 pb-0" scrolling transparent>
+        <MDBNavbar color="grey lighten-3" className="fixed-top" scrolling transparent>
             <Navbar.Brand href="/" className="pt-0"><img src={process.env.PUBLIC_URL+ "logoHead.png"}></img></Navbar.Brand>
         </MDBNavbar>
     );

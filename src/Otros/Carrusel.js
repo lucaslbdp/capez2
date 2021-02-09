@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel"
 
 const Nosotros = () => {
     return (
-        <div className="pt-5 mt-3">
+        <div className="pt-5 mt-5">
             <Carousel className="pt-5">
                 <Carousel.Item interval={4000}>
                     <img
