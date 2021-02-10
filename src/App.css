@@ -13,4 +13,19 @@
 }
 
 
+/* resolucion para dispositivos muy pequeños*/
+@media(max-width: 575px){
 
+}
+/* resolucion para dispositivos pequeños*/
+@media(min-width: 576px){
+
+}
+/* resolucion para tablets*/
+@media(min-width: 768px){
+
+}
+/* resolucion para pc de escritorio*/
+@media(min-width: 992px){
+
+}

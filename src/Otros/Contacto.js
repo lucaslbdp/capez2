@@ -10,7 +10,7 @@ import {
 import "../../src/App.css";
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
-
+import imgBody from "../img/imgBody.png"
 
 const Contacto = () => {
   const [state, setState] = useState({
@@ -119,8 +119,8 @@ const Contacto = () => {
             </div>
           </form>
         </MDBCol>
-        <MDBCol>
-          <img src={process.env.PUBLIC_URL + "/imgBody.png"} style={{maxWidth:"510px"}} className="ml-4 pt-5 pb-5"></img>
+        <MDBCol className="col-sm-12 col-md-6">
+          <img src={imgBody} alt="img" style={{maxWidth:"510px"}} className="ml-4 pt-5 pb-5"></img>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
