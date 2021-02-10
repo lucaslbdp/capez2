@@ -53,7 +53,7 @@ const Contacto = () => {
       <MDBRow>
         <MDBCol md="6">
           <form className="mt-5 pt-5 mb-5" onSubmit={enviarFormulario}>
-            <p className="h5 text-center mb-4">Hace tu consulta SIN CARGO</p>
+            <p className="h5 text-center mb-4">Hacé tu consulta ¡Estamos para ayudarte!</p>
             <div className="grey-text">
               <MDBInput
                 label="Tu nombre"
@@ -110,7 +110,7 @@ const Contacto = () => {
                 type="submit"
                 value="send"
                 outline={disabledBoton}
-                color="secondary"
+                color="success"
                 disabled={disabledBoton}
               >
                 Enviar
